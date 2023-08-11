@@ -61,6 +61,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: debug-env
+        env:
       - name: debug
         env:
           GH_EVENT: ${{ toJson(github) }}
